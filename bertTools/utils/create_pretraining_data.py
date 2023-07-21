@@ -233,7 +233,9 @@ class LoadBertPretrainingDataset(object):
         :param filepath:
         :return:
         """
+        print("啦啦啦啦啦啦：",filepath)
         paragraphs = self.get_format_data(filepath)
+
         # 返回的是一个二维列表，每个列表可以看做是一个段落（其中每个元素为一句话）
         data = []
         max_len = 0
